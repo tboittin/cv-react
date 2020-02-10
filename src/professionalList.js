@@ -31,7 +31,7 @@ const ProfessionalList = () => {
     ]
     
     const companyRender = (company) => {
-        if (experience != "") {
+        if (experience !== "") {
             return (" - " + company)
         }
     }

@@ -2,6 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import PersonnalInfo from './personnalInfo'
+import './header.css'
 
 const Header = () => {
     return (
@@ -34,9 +35,6 @@ const Header = () => {
                     </Col>
                 </Row>
             </Container>
-            <style jsx>{`
-                .hero {width:100%}
-            `}</style>
         </div>
     )
 }

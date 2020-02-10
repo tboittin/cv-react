@@ -1,3 +1,4 @@
+import './App.css'
 import React from 'react'
 import Header from './header'
 import Profile from './profile'
@@ -7,7 +8,7 @@ import EducationList from './educationList'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { Container, Col, Row, Footer } from 'react-bootstrap'
+import { Container, Col, Row} from 'react-bootstrap'
 import ProfessionalList from './professionalList'
 // import NextSVGIcon from './nextSvgIcon'
 // import Divider from './divider'

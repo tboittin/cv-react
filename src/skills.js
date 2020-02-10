@@ -1,5 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './skills.css'
 import { Container } from 'react-bootstrap'
 
 const Skills = () => {
@@ -27,17 +28,6 @@ const Skills = () => {
                     ))}
                 </ul>
             </Container>
-            <style jsx>
-                {`
-                ul {
-                    list-style: none;
-                }
-                @media (min-width: 1200px){
-                    ul {
-                        justify-content: space-between;
-                    }
-                }`}
-            </style>
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
+import './personnalInfo.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faEnvelope, faPhone, faLaptopCode} from '@fortawesome/free-solid-svg-icons'
 
@@ -43,12 +44,6 @@ const PersonnalInfo = () => {
                     </li>
                 </ul>
             </Container>
-            <style jsx>{`
-                ul {
-                    list-style: none;
-                }
-            `}
-            </style>
         </div>
     )
 }
