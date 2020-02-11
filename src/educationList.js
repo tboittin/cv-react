@@ -30,13 +30,41 @@ const EducationList = () => {
                     id: 2,
                     title: "jammming",
                     description: "jammming description Aenean massa felis, pharetra vitae molestie vitae, luctus eu lorem. Etiam pharetra dui id dolor porttitor tempus. Donec efficitur blandit pretium.",
-                }
+                },
             ]
-
-        }
+        },
+        {
+            id: 3,
+            title: "CodeCademy - Web Development Path",
+            status: "",
+            projects: [
+                {
+                    id: 1,
+                    title: "Colmar Academy",
+                    description: "A flexbox website featuring the non existent Colmar Academy.",
+                },
+                {
+                    id: 2,
+                    title: "Excursion",
+                    description: "A promotional page for a fictional app called Excursion.",
+                },
+            ]
+        },
+        {
+            id: 4,
+            title: "Create a modern and professional website with WordPress 5",
+            status: "",
+            projects: [
+                {
+                    id: 1,
+                    title: "FitActive",
+                    description: `A wordpress website I made for my OpenClassroom course. It features the FitActive Gym. It possesses a homepage and a blog-type page ("Actualités" in the top right corner of the navigation bar) which links to 3 blog posts. I made it on local using the software Local by Flywheel, but in order to display it in my portfolio, I had to make this dynamic WordPress into a static page. Therefore some features, such as leaving a comment, are not allowed by static pages.`,
+                },
+            ]
+        },
     ]
 
-    const courseRender = () => {
+    const coursesRender = () => {
         return (
             courses.map(course => (
                 <Container key={course.id} className="course">
@@ -55,7 +83,7 @@ const EducationList = () => {
     return(
         <div className="EducationList">
             <h3>Education & Projects</h3>
-            {courseRender()}
+            {(courses.length>0) && (coursesRender())}
         </div>
     )
 }
