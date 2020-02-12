@@ -49,9 +49,11 @@ const ProfessionalList = () => {
             <div>
                 {devExperience.map(devExperience => (
                     <Container key={devExperience.id} className="experience">
-                        <h4>{devExperience.title} {(devExperience.company.length>0)&&('- ' + devExperience.company)}</h4>
+                        <h4>
+                            {devExperience.title}
+                            {(devExperience.company.length>0)&&(' - ' + devExperience.company)}</h4>
                         <Container>
-                            <p>{devExperience.period} - {devExperience.country}</p>
+                            <p>{devExperience.country} - {devExperience.period}</p>
                             <p>{devExperience.description} </p>
                         </Container>
                     </Container>
@@ -65,9 +67,9 @@ const ProfessionalList = () => {
             <div>
                 {istomExperience.map(istomExperience => (
                     <Container key={istomExperience.id} className="experience">
-                        <h4>{istomExperience.title} {(istomExperience.company.length>0)&&('- ' + istomExperience.company)}</h4>
+                        <h4>{istomExperience.title} {(istomExperience.company.length>0)&&(' - ' + istomExperience.company)}</h4>
                         <Container>
-                            <p>{istomExperience.period} - {istomExperience.country}</p>
+                            <p>{istomExperience.country} - {istomExperience.period}</p>
                             <p>{istomExperience.description} </p>
                         </Container>
                     </Container>
@@ -79,7 +81,11 @@ const ProfessionalList = () => {
     const reorientation = () => {
         return(
             <div>
-                <h5>Programming Reorientation - 2018</h5>
+                <hr />
+                <h5 className="text-center">
+                    Programming Reorientation - 2018
+                </h5>
+                <hr />
             </div>
         )
     }

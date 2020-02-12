@@ -15,39 +15,37 @@ import ProfessionalList from './professionalList'
 
 const CV = () => {
     return(
-        <div>
-            <Container>
-                <Row>
-                    <Col>
-                        <Header />
-                        {/* <Divider /> */}
-                        {/* <NextSVGIcon/> */}
-                        <Profile />
-                        <LanguagesAndTools />
-                        <Skills />
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col
-                        lg={{
-                            span:6
-                        }}
-                        className="order-2 order-lg-1"
-                    >
-                        <ProfessionalList />
-                    </Col>
-                    <Col
-                        lg={{
-                            span:6
-                        }}
-                        className="order-1 order-lg-2"
-                    >
-                        <EducationList />
-                        
-                    </Col>
-                </Row>
-            </Container>
+        <div className="p-5">
+            <Row>
+                <Col>
+                    <Header />
+                    {/* <Divider /> */}
+                    {/* <NextSVGIcon/> */}
+                    <Profile />
+                    <LanguagesAndTools />
+                    <Skills />
+                </Col>
+            </Row>
+            <hr />
+            <Row>
+                <Col
+                    lg={{
+                        span:6
+                    }}
+                    className="order-2 order-lg-1"
+                >
+                    <ProfessionalList />
+                </Col>
+                <Col
+                    lg={{
+                        span:6
+                    }}
+                    className="order-1 order-lg-2"
+                >
+                    <EducationList />
+                    
+                </Col>
+            </Row>
         </div>
     )
 }

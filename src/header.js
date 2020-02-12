@@ -13,19 +13,13 @@ const Header = () => {
                         xs={{
                             span: 12,
                         }}
-                        lg={{
-                            span:"auto",
-                        }}
-                        className="text-center"
+                        className="text-center align-content-end"
                     >
                         <h1 className="title">Thomas Boittin</h1>
                     </Col>
                     <Col
                         xs={{
-                            span: "auto",
-                        }}
-                        lg={{
-                            span:"auto"
+                            span: 12,
                         }}
 
                         className="text-center text-lg-right"

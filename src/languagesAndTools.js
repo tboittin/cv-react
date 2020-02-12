@@ -36,18 +36,18 @@ const LanguagesAndTools = () => {
     ]
 
     return (
-        <div className="languagesAndTools">
+        <React.Fragment>
             {/* <h3>Languages and Tools</h3> */}
-            <Container>
-                <ul className="pl-0 text-center">
+            <Container className="mb-3 mt-3">
+                <ul className="p-1 text-center d-flex flex-wrap justify-content-around">
                     {toolsList.map(tool => (
-                        <li key={tool.id}>
-                            {tool.icon} {tool.name}
+                        <li key={tool.id} className="m-1 badge-pill badge-primary">
+                            <span className="d-none">{tool.icon}</span> {tool.name}
                         </li>
                     ))}
                 </ul>
             </Container>
-        </div>
+        </React.Fragment>
     )
 }
 

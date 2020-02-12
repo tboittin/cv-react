@@ -58,7 +58,7 @@ const EducationList = () => {
                 {
                     id: 1,
                     title: "FitActive",
-                    description: `A wordpress website I made for my OpenClassroom course. It features the FitActive Gym. It possesses a homepage and a blog-type page ("Actualités" in the top right corner of the navigation bar) which links to 3 blog posts. I made it on local using the software Local by Flywheel, but in order to display it in my portfolio, I had to make this dynamic WordPress into a static page. Therefore some features, such as leaving a comment, are not allowed by static pages.`,
+                    description: `It features the FitActive Gym. It possesses a homepage and a blog-type page ("Actualités" in the top right corner of the navigation bar) which links to 3 blog posts. I made this WordPress page a static page in order to integrate it to my webpage.`,
                 },
             ]
         },
@@ -68,7 +68,12 @@ const EducationList = () => {
         return (
             courses.map(course => (
                 <Container key={course.id} className="course">
-                    <h4>{course.title} - {course.status}</h4>
+                    <h4>
+                        {course.title}
+                    </h4>
+                    <h5>
+                        {(course.status.length>0) && (course.status)}
+                    </h5>
                     {course.projects.map(project => (
                         <Container key={project.id} className="project">
                             <h5>{project.title}</h5>
