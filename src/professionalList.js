@@ -23,8 +23,8 @@ const ProfessionalList = () => {
             description: `
                 Product evolution as part of planned actions.
                 Development and unit tests.
-                Modifications reporting in the development modules et through management tools.
-                Correction technical related to user Demands.
+                Reporting.
+                Technical correction related to user Demands.
                 Go live patches.
             `,
         }
@@ -38,8 +38,8 @@ const ProfessionalList = () => {
             country: "Philippines",
             period: "2016",
             description: `
-                Short term impact study for a family farming support project in the Cavite province, Philippines.
-                Development of a monitoring tool allowing an improved reporting of the results and a better project management.            
+                Short term impact study - family farming support project - Cavite province.
+                Monitoring tool development - better reporting & improved project management.            
             `,
         },
     ]
@@ -48,11 +48,11 @@ const ProfessionalList = () => {
         return (
             <div>
                 {devExperience.map(devExperience => (
-                    <Container key={devExperience.id} className="experience">
+                    <Container key={devExperience.id} className="experience pr-0">
                         <h4>
                             {devExperience.title}
                             {(devExperience.company.length>0)&&(' - ' + devExperience.company)}</h4>
-                        <Container>
+                        <Container className="pr-0">
                             <p>{devExperience.country} - {devExperience.period}</p>
                             <p>{devExperience.description} </p>
                         </Container>
@@ -66,9 +66,9 @@ const ProfessionalList = () => {
         return (
             <div>
                 {istomExperience.map(istomExperience => (
-                    <Container key={istomExperience.id} className="experience">
+                    <Container key={istomExperience.id} className="experience pr-0">
                         <h4>{istomExperience.title} {(istomExperience.company.length>0)&&(' - ' + istomExperience.company)}</h4>
-                        <Container>
+                        <Container className="pr-0">
                             <p>{istomExperience.country} - {istomExperience.period}</p>
                             <p>{istomExperience.description} </p>
                         </Container>

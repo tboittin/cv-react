@@ -12,7 +12,7 @@ const EducationList = () => {
                 {
                     id: 1,
                     title: "Movie DB",
-                    description: "Movie DB description. enean mattis ut turpis quis tincidunt. Mauris a nisi et diam tincidunt pulvinar. Nullam nec erat in tellus finibus mattis sit amet eu nulla.",
+                    description: "Movie DB description.",
                 },
             ]
         },
@@ -24,12 +24,12 @@ const EducationList = () => {
                 {
                     id: 1,
                     title: "ravenous",
-                    description: "ravenous description, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut laoreet nibh. Suspendisse scelerisque semper commodo. Cras cursus arcu id ultricies lobortis.",
+                    description: "ravenous description.",
                 },
                 {
                     id: 2,
                     title: "jammming",
-                    description: "jammming description Aenean massa felis, pharetra vitae molestie vitae, luctus eu lorem. Etiam pharetra dui id dolor porttitor tempus. Donec efficitur blandit pretium.",
+                    description: "jammming description.",
                 },
             ]
         },
@@ -52,13 +52,13 @@ const EducationList = () => {
         },
         {
             id: 4,
-            title: "Create a modern and professional website with WordPress 5",
+            title: "OpenClassroom - Create a modern and professional website with WordPress 5",
             status: "",
             projects: [
                 {
                     id: 1,
                     title: "FitActive",
-                    description: `It features the FitActive Gym. It possesses a homepage and a blog-type page ("Actualités" in the top right corner of the navigation bar) which links to 3 blog posts. I made this WordPress page a static page in order to integrate it to my webpage.`,
+                    description: `It features the FitActive Gym. Homepage & blog page. I made this WordPress page into a static page in order to integrate it to my webpage.`,
                 },
             ]
         },
