@@ -12,10 +12,10 @@ const Skills = () => {
             id: '1',
             name: 'Autodidact'
         },
-        // {
-        //     id: '2',
-        //     name: 'Teamwork'
-        // },
+        {
+            id: '2',
+            name: 'Teamwork'
+        },
         {
             id: '3',
             name: 'French & English'
