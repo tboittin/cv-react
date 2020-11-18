@@ -10,6 +10,7 @@ const EducationList = () => {
     {
       id: 1,
       title: "Udemy - Complete Next.js with React & Node",
+      period: '2019',
       link: 'https://www.udemy.com/course/awesome-nextjs-with-react-and-node-amazing-portfolio-app/',
       status: "ongoing",
       projects: [
@@ -77,6 +78,7 @@ const EducationList = () => {
 
   const istom = {
     title: "ISTOM - Master of International Agro-Development",
+    period: "2011-2016",
     link: "http://www.istom.com/1.cfm?p=618-our-school-istom",
     description:
       "Design, Implementation, Management of Agro-Economic Development Projects in developing countries.",
@@ -85,7 +87,7 @@ const EducationList = () => {
   const coursesRender = () => {
     return courses.map((course) => (
       <Container key={course.id} className="course">
-        <h4><a href={course.link}>{course.title}</a></h4>
+        <h4><a href={course.link}>{course.title}</a> - {course.period}</h4>
         {/* <h5>
                         {(course.status.length>0) && (course.status)}
                     </h5> */}
@@ -103,7 +105,7 @@ const EducationList = () => {
     return (
       <Container>
         <h4>
-          <a href={istom.link}>{istom.title}</a>
+          <a href={istom.link}>{istom.title}</a> - {istom.period}
         </h4>
         <Container className="project">
           <p>{istom.description}</p>

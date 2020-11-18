@@ -19,12 +19,18 @@ const ProfessionalList = () => {
       subprojects: [
         {
           title: "Qui Sont-iels ?",
+          partner: 'Spielact Festival',
+          partnerLink:'https://www.spielact.ch/',
+          period: '2020',
           link: "https://qsie-client.vercel.app/",
           description:
             "A game to discuss around gender and orientation stereotypes. Made with React.js & node.js using socket.io for players interactions.",
         },
         {
           title: "Trust Over Time",
+          partner: 'EPFL+Ecal Lab',
+          partnerLink: 'https://www.ecal.ch/en/1473/ecal/epfl-ecal-lab/descriptif',
+          period: '2020',
           link:
             "http://dhcenter-unil-epfl.com/en/2020/05/28/online-survey-trust-over-time-project/",
           description:
@@ -81,7 +87,7 @@ const ProfessionalList = () => {
                 devExperience.subprojects.map((subproject) => (
                   <Container>
                     <h5 className="mb-0">
-                      <a href={subproject.link}>{subproject.title}</a>
+                      <a href={subproject.link}>{subproject.title}</a> made for <a href={subproject.partnerLink}>{subproject.partner}</a> - {subproject.period}
                     </h5>
                     <p className="pl-2">{subproject.description}</p>
                   </Container>
