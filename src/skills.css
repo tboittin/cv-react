@@ -1,6 +1,12 @@
 ul {
     list-style: none;
 }
+
+.skill-color {
+    background-color: #336;
+    color: #DDD
+}
+
 @media (min-width: 1200px){
     ul {
         justify-content: space-between;

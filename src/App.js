@@ -8,15 +8,15 @@ import EducationList from './educationList'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { Container, Col, Row} from 'react-bootstrap'
+import { Col, Row} from 'react-bootstrap'
 import ProfessionalList from './professionalList'
 // import NextSVGIcon from './nextSvgIcon'
 // import Divider from './divider'
 
 const CV = () => {
     return(
-        <div className="p-5">
-            <Row>
+        <div>
+            <Row className="header-color py-3">
                 <Col>
                     <Header />
                     {/* <Divider /> */}
@@ -26,13 +26,12 @@ const CV = () => {
                     <Skills />
                 </Col>
             </Row>
-            <hr />
-            <Row>
+            <Row className="px-5 py-4">
                 <Col
                     lg={{
                         span:6
                     }}
-                    className="order-2 order-lg-1"
+                    className="order-1 order-lg-1 my-3"
                 >
                     <ProfessionalList />
                 </Col>
@@ -40,7 +39,7 @@ const CV = () => {
                     lg={{
                         span:6
                     }}
-                    className="order-1 order-lg-2"
+                    className="order-2 order-lg-2  my-3"
                 >
                     <EducationList />
                     

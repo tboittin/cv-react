@@ -27,7 +27,7 @@ const Skills = () => {
             <Container>
                 <ul className="pl-0 text-center d-flex flex-wrap justify-content-around">
                     {skills.map(skill => (
-                        <li key={skill.id} className="m-1 badge-pill badge-secondary">{skill.name}</li>
+                        <li key={skill.id} className="m-1 badge-pill skill-color">{skill.name}</li>
                     ))}
                 </ul>
             {/* <MapSkills skills={skills} /> */}
