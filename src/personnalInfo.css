@@ -1,3 +1,7 @@
 ul {
     list-style: none;
 }
+
+.icons-container a{
+    color: #00F;
+}

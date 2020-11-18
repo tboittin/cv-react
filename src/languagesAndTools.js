@@ -41,7 +41,7 @@ const LanguagesAndTools = () => {
             <Container className="mb-3 mt-3">
                 <ul className="p-1 text-center d-flex flex-wrap justify-content-around">
                     {toolsList.map(tool => (
-                        <li key={tool.id} className="m-1 badge-pill badge-primary">
+                        <li key={tool.id} className="m-1 badge-pill badge-color">
                             <span className="d-none">{tool.icon}</span> {tool.name}
                         </li>
                     ))}
